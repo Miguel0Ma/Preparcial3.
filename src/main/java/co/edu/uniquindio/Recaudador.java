@@ -13,5 +13,7 @@ public class Recaudador extends Persona{
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
+    public String nombreCompleto(){
+        return nombre+" "+apellido;
+    }
 }

@@ -6,6 +6,7 @@ public class Estacion {
     private String departamento;
     private double totalRecoletado;
     private ArrayList<Vehiculo> listvehiculos;
+    private ArrayList<Recaudador> listrecaudadores;
 
 
     public Estacion(String nombre, String departamento, double totalRecoletado) {
@@ -70,6 +71,13 @@ public class Estacion {
         }
         return valor;
     }
-
+    public Recaudador buscarNombreCompleto(Recaudador recaudador){
+        for ( Recaudador recaudador1 : listrecaudadores){
+            if (recaudador.equals(recaudador1)){
+                return recaudador1;
+            }
+        }
+        return null;
+    }
 }
 
